@@ -12,11 +12,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
-        body: Container(
-          color: Colors.white,
-          child: const Center(
-            child: Text('Hello world'),
-          ),
+        body: SafeArea(
+          child:
+              Container(color: Colors.white, child: const Text('Hello world')),
         ),
       ),
     );
